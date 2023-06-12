@@ -1,16 +1,11 @@
 from flask import Flask
 
-
-# If `entrypoint` is not defined in app.yaml, App Engine will look for an app
-# called `app` in `main.py`.
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello():
-    
-    # List of Integers
-    numbers = [12, 33, 44, 17,37,48,60,58]
+    numbers = [38, 33, 12, 27, 87, 45, 67, 57]
  
     #Sorting list of Integers
     numbers.sort(reverse=True)
